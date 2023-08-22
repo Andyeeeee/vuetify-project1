@@ -387,6 +387,7 @@
 			<div>訂位專線：(02) 2631 2626</div>
 			<div>統編： 31864992</div>
 		</section>
+		<section></section>
 	</div>
 	<!-- <FooTer></FooTer> -->
 </template>
@@ -397,7 +398,6 @@ import { useSnackbar } from 'vuetify-use-dialog'
 import ProductCard from '@/components/ProductCard.vue'
 import layout from '@/components/FrontLayout.vue'
 import tite from '@/components/TitlePicture.vue'
-import FooTer from '@/components/FooTer.vue'
 
 const createSnackbar = useSnackbar()
 
