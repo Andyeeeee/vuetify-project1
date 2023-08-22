@@ -123,6 +123,16 @@ const routes = [
 					login: true,
 					admin: true
 				}
+			},
+			{
+				path: 'noworder',
+				name: 'AdminNowOrder',
+				component: () => import(/* webpackChunkName: "admin-NowOrder" */ '@/views/admin/NowOrder.vue'),
+				meta: {
+					title: 'KK | 訂單進度',
+					login: true,
+					admin: true
+				}
 			}
 		]
 	},

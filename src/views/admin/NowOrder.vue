@@ -1,30 +1,36 @@
 <template>
+  <!-- <section style="background-color:#004886;"> -->
 	<h1 style="color: black">訂單進度</h1>
 	<div style="display: flex; justify-content: center; width: 80%; height: 500px; margin: auto; background-color: #004886">
 		<div style="width: 50%; text-align: center; border: 3px solid black">
 			<h2 class="title-box" style="background-color: #fcae11; color: #000">
 				目前訂單
 			</h2>
-			<!-- <tr v-for="order in orders" :key="order._id"> -->
-				<!-- <td>{{ order.user._id }}</td> -->
-				<!-- <td>{{ order.user.account }}</td> -->
-				<!-- <td> -->
-					<ul>
-						<li v-for="item in order.cart" :key="item._id">
-							{{ item.product._id }}
-						</li>
-					</ul>
-				<!-- </td> -->
-			<!-- </tr> -->
+      <v-table>
+          <!-- <thead style="background-color: #fcae11; color: black;">
+            <tr>
+              <td>使用者訂單</td>
+            </tr>
+          </thead> -->
+          <!-- <tbody> -->
+            <tr v-for="order in orders" :key="order._id">
+           <td v-if="!order.status"> <v-btn width="100%" @click="ChangeStatus(order._id)">{{ order.user.account }}</v-btn></td>
+            </tr>
+          <!-- </tbody> -->
+        </v-table>
 		</div>
 		<div style="width: 50%; border: 3px solid black">
 			<h2 class="title-box" style="background-color: #fcae11; color: #000">
 				已完成訂單
 			</h2>
-
-			<!-- 迴圈 -->
+    <v-table>
+      <tr v-for="(order, i) in orders" :key="order._id">
+            <td v-if="order.status"><v-btn width="100%" @click="orders.splice(i,1)">{{ order.user.account }}</v-btn></td>
+            </tr>
+    </v-table>
 		</div>
 	</div>
+  <!-- </section> -->
 </template>
 <script setup>
 import { ref } from 'vue'
@@ -58,4 +64,17 @@ const orders = ref([])
 			})
 		}
 	})()
+
+  const ChangeStatus = async(value) => {
+try {
+  const { data } = await apiAuth.patch('/orders/' + value, {
+    status: true
+  })
+  console.log(orders)
+  const idx = orders.value.findIndex(item => item._id === value)
+  orders.value[idx].status = true
+} catch (error) {
+
+}
+  }
 </script>

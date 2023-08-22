@@ -52,6 +52,7 @@ const toHome = () => {
 const navItems = [
 	{ to: '/admin/products', title: '商品管理', icon: 'mdi-shopping' },
 	{ to: '/admin/orders', title: '訂單管理', icon: 'mdi-format-list-numbered' },
+	{ to: '/admin/noworder', title: '訂單進度', icon: 'mdi-clipboard-text-search-outline' },
 	{ to: '/', title: '回首頁', icon: 'mdi-home' }
 ]
 

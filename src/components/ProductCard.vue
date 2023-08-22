@@ -7,6 +7,7 @@
 					cover
 					class="image"
 					style="border-right: 5px #2b2b2b solid"
+
 				></v-img>
 			</div>
 			<div

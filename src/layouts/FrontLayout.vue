@@ -118,7 +118,7 @@ const navItems = computed(() => {
 		{ to: '/cart', icon: 'mdi-cart-variant', show: isLogin.value },
 		{ to: '/', text: '首頁菜單', show: true },
 		{ to: '/login', text: '會員登入', show: !isLogin.value },
-		{ to: '/admin/orders', text: '訂單', show: isLogin.value && isAdmin.value },
+		{ to: '/orders', text: '訂單', show: isLogin.value },
 		{ to: '/admin', text: '管理', show: isLogin.value && isAdmin.value },
 		{ to: '/member', text: '會員資料', show: isLogin.value && !isAdmin.value },
 		{ to: '/aboutus', text: '關於我們', show: true }
