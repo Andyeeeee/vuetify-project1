@@ -96,7 +96,6 @@
 			</v-container>
 		</section>
 
-		<foot></foot>
 	</div>
 </template>
 
