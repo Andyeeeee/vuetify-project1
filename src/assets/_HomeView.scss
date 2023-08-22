@@ -1,0 +1,210 @@
+#HomeView {
+	h1 {
+		background-color: #004886;
+		// font-size: 40px;
+		// margin: 10px;
+	} // 底色
+	background-color: #004886;
+	font-size: 50px;
+	//第一類別顏色
+	.v-slide-group-item--active {
+		color: rgb(245, 207, 39) !important;
+	}
+
+	//第一類別字體
+	.v-card .v-tab {
+		font-size: 15px;
+	}
+
+	//第二類別css
+	.p-0 {
+		padding: 0;
+		background-color: #004886;
+		// font-size: 100px
+		// aling: center
+		// border: 2px #4adc25 solid
+		.v-btn {
+			// border: 1px #fff solid;
+			// width: 100%;
+			background-color: #003c6c;
+			// height: 100px;
+		}
+		.v-col-4 {
+			// border: 1px solid black;
+			color: white;
+			padding: 0;
+		}
+		.button {
+		}
+	}
+
+	// 商品
+	.section2 {
+		.v-img__img--cover {
+			height: 100px;
+			width: 100px;
+		}
+		.v-card .v-card-title {
+			font-size: 18px;
+		}
+		.v-slide-group__content {
+			width: 100%;
+			text-align: center;
+		}
+		.p-0 .v-btn {
+			// width: 100%;
+		}
+		.margin-md0 .v-tab {
+			height: 100px;
+		}
+		.v-card-subtitle {
+			font-size: 20px;
+		}
+		.element.style {
+			background-color: white;
+		}
+	}
+
+	@include md {
+		h1 {
+			// font-size: 40px;
+			// margin: 10px;
+		}
+
+		//第一類別字體
+		.v-card .v-tab {
+			font-size: 30px;
+		}
+		.p-0 .v-btn {
+			font-size: 35px; // width: 100%;
+		}
+
+		// 商品
+		.section2 {
+			//品名
+			.v-img__img--cover {
+				height: 160px;
+				width: 160px;
+			}
+			//說明
+			.v-card .v-card-title {
+				font-size: 30px;
+			}
+
+			.v-slide-group__content {
+				width: 100%;
+				text-align: center;
+				// background-color: adjust-hue($color: #000000, $degrees: 0);
+			}
+			.v-card-subtitle {
+				font-size: 20px;
+			}
+			pre {
+				font-size: 20px;
+			}
+			.v-responsive__sizer {
+				padding: 0 !important;
+			}
+		}
+
+		.one1 {
+			width: 100% !important;
+		}
+		.v-container {
+			background-color: #004886;
+		}
+		.margin-md0 {
+			margin: -12px -12px 0px -12px !important;
+			width: 100%;
+			// border: 1px white solid;
+		}
+		.v-card-subtitle {
+			font-size: 50px;
+		}
+	}
+
+	@include lg {
+		h1 {
+			// font-size: 50px;
+			// margin: 20px;
+		}
+		.p-0 .v-btn {
+			font-size: 30px; // width: 100%;
+		}
+		.section2 {
+			.v-img__img--cover {
+				height: 220px;
+				width: 220px;
+			}
+		}
+	}
+}
+
+// 	//標題
+// 	h1 {
+// 		background-color: #004886;
+// 		font-size: 30px;
+// 		margin: 5px;
+// 		@include md {
+// 			font-size: 40px;
+// 			margin: 10px;
+
+// 			@include lg {
+// 				font-size: 50px;
+// 				margin: 20px;
+// 			}
+// 		}
+// 	}
+
+// ----
+
+// 	//產品圖片大小
+// 	.section2 {
+// 		.v-img__img--cover {
+// 			height: 100px;
+// 			width: 100px;
+// 			@include md {
+// 				height: 160px;
+// 				width: 160px;
+
+// 				@include lg {
+// 					height: 220px;
+// 					width: 220px;
+// 				}
+// 			}
+// 		}
+// 	}
+
+//	----------------
+// .main-picture
+//   @include lg
+//     height: 600px
+
+// .main-picture
+//   height: 600px
+// section
+// margin-botton: 20px
+
+// // 導向欄
+// .v-toolbar__content{
+//   // height: 100px !important;
+// }
+// .v-main{
+//   // --v-layout-top: 100px !important;
+// }
+
+//類別第2層
+.v-application__wrap {
+	background-color: #ffffff;
+}
+#sort {
+	.v-btn {
+		background-color: #b92929;
+	}
+}
+// .border {
+// 	// height: 250px
+// }
+// .mtb {
+// 	// margin: 10px 0;
+// }

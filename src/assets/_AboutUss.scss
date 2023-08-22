@@ -1,0 +1,73 @@
+#AboutUss {
+	background-color: #004886;
+}
+
+//公告
+.section3 {
+	.announcement {
+		background-color: #003158;
+		width: 90%;
+		margin: auto;
+		text-align: start;
+		div {
+			font-size: 25px;
+		}
+	}
+}
+
+.center {
+	text-align: center;
+	margin: auto;
+}
+
+iframe {
+	width: 80%;
+	height: 80%;
+}
+
+@include md {
+	//公告
+	.section3 {
+		.announcement {
+			background-color: #003158;
+			width: 80%;
+			margin: auto;
+			text-align: start;
+			div {
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+@include lg {
+	h1 {
+		font-size: 50px;
+		margin: 20px;
+	}
+	//公告
+	.section3 {
+		.announcement {
+			background-color: #003158;
+			width: 70%;
+			margin: auto;
+			text-align: start;
+			div {
+				font-size: 35px;
+			}
+		}
+	}
+
+	.flex {
+		display: flex;
+		justify-content: center;
+	}
+	iframe {
+		width: 500px;
+		height: 500px;
+	}
+	p {
+		padding-left: 20px;
+		text-align: left;
+	}
+}

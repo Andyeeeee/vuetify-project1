@@ -1,0 +1,9 @@
+#TitlePicture {
+	height: 200px;
+	@include md {
+		height: 300px;
+	}
+	@include lg {
+		height: 550px;
+	}
+}
