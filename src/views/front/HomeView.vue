@@ -387,7 +387,6 @@
 			<div>訂位專線：(02) 2631 2626</div>
 			<div>統編： 31864992</div>
 		</section>
-		<section></section>
 	</div>
 	<!-- <FooTer></FooTer> -->
 </template>
