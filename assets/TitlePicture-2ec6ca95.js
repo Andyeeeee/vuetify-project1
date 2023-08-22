@@ -1,0 +1,1 @@
+import{aQ as t,a2 as r,a3 as c,c as a,V as n}from"./index-e94b06ba.js";const o={},s={id:"TitlePicture"};function d(e,i){return r(),c("div",s,[a(n,{width:e.auto,"aspect-ratio":"16/9",cover:"",src:"https://d37w6prdd1grkb.cloudfront.net/buzzdaily/2086_news_banner.jpg?ndt=104032"},null,8,["width"])])}const l=t(o,[["render",d]]);export{l as T};
