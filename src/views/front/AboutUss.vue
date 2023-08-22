@@ -101,7 +101,7 @@
 
 <script setup>
 import tite from '@/components/TitlePicture.vue'
-import foot from '@/components/FooTer.vue'
+// import foot from '@/components/FooTer.vue'
 // 這邊很詭異
 </script>
 <style>
