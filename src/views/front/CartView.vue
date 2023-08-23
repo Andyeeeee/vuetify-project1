@@ -1,24 +1,24 @@
 <template>
-  <section>
+  <!-- <section>
     <v-img :width="auto" aspect-ratio="16/9" cover
       src="https://d37w6prdd1grkb.cloudfront.net/buzzdaily/2086_news_banner.jpg?ndt=104032"></v-img>
-  </section>
+  </section> -->
   <section id="CartView">
     <v-container>
       <v-row>
         <v-col cols="12">
-          <h1 class="text-center">點餐清單</h1>
+          <h3 class="text-center">點餐清單</h3>
         </v-col>
         <v-col cols="12">
           <v-table>
-            <thead style="background-color: #d9d9d9; color: black;">
-              <tr class="tr text-center">
-                <th>圖片</th>
-                <th>名稱</th>
-                <th>單價</th>
-                <th>數量</th>
-                <th>小計</th>
-                <th>操作</th>
+            <thead>
+              <tr class="text-center tr">
+                <th style="color: black;">圖片</th>
+                <th style="color: black;">名稱</th>
+                <th style="color: black;">單價</th>
+                <th style="color: black;">數量</th>
+                <th style="color: black;">小計</th>
+                <th style="color: black;">操作</th>
               </tr>
             </thead>
             <tbody>
@@ -52,14 +52,6 @@
         </v-col>
       </v-row>
     </v-container>
-  </section>
-
-  <section id="footer" style="text-align: center; background-color: #003158;">
-    <img src="@/image/icon.jpg" alt="" width="120" style="margin: 50px;">
-    <div>114台北市內湖區民權東路六段296巷36號</div>
-    <div>訂位專線：(02) 2631 2626</div>
-    <div>統編： 31864992</div>
-
   </section>
 </template>
 

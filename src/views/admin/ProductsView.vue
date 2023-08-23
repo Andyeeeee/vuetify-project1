@@ -1,62 +1,64 @@
 <template>
-  <VContainer id="ProductsView">
-    <VRow>
-      <VCol cols="12">
-        <h1 class="text-center">商品管理</h1>
-      </VCol>
-      <VDivider></VDivider>
-      <VCol cols="12">
-        <VBtn color="green" @click="openDialog">新增商品</VBtn>
-        <VDataTableServer v-model:items-per-page="tableItemsPerPage" v-model:sort-by="tableSortBy"
-          v-model:page="tablePage" :items="tableProducts" :headers="tableHeaders" :loading="tableLoading"
-          :items-length="tableItemsLength" :search="tableSearch" hover @update:items-per-page="tableLoadItems"
-          @update:sort-by="tableLoadItems" @update:page="tableLoadItems">
-          <template #top>
-            <VTextField label="搜尋" append-icon="mdi-magnify" @click:append="tableApplySearch"
-              @keydown.enter="tableApplySearch" v-model="tableSearch" class="color"></VTextField>
-          </template>
-          <template #[`item.image`]="{ item }">
-            <VImg :src="item.raw.image" max-width="100px" class="mx-auto"  aspect-ratio="1" cover="" ></VImg>
-          </template>
-          <template #[`item.sell`]="{ item }">
-            <VIcon icon="mdi-check" v-if="item.raw.sell"></VIcon>
-          </template>
-          <template #[`item.edit`]="{ item }">
-            <VBtn icon="mdi-pencil" @click="tableEditItem(item.raw)" variant="text"></VBtn>
-          </template>
-        </VDataTableServer>
-      </VCol>
-    </VRow>
-  </VContainer>
-  <VDialog persistent width="500px" v-model="dialog">
-    <VForm :disabled="isSubmitting" @submit.prevent="submit">
-      <VCard>
-        <VCardTitle>{{ dialogId.length > 0 ? '編輯商品' : '新增商品' }}</VCardTitle>
-        <VCardText>
-          <VTextField label="名稱" v-model="name.value.value" :error-messages="name.errorMessage.value"></VTextField>
-          <VTextField label="價格" v-model.number="price.value.value" :error-messages="price.errorMessage.value"
-            type="number" min="0"></VTextField>
-          <VTextarea label="說明" v-model="description.value.value" :error-messages="description.errorMessage.value">
-          </VTextarea>
-          <VSelect label="分類" v-model="category.value.value" :error-messages="category.errorMessage.value"
-            :items="categories"></VSelect>
-          <VSelect label="分類2" v-model="categorytwo.value.value" :error-messages="categorytwo.errorMessage.value"
-            :items="categorytwoitem">
-          </VSelect>
+  <div id="ProductsView">
+    <VContainer>
+      <VRow>
+        <VCol cols="12">
+          <h3 class="text-center">商品管理</h3>
+        </VCol>
+        <VDivider></VDivider>
+        <VCol cols="12">
+          <VBtn color="green" @click="openDialog">新增商品</VBtn>
+          <VDataTableServer v-model:items-per-page="tableItemsPerPage" v-model:sort-by="tableSortBy"
+            v-model:page="tablePage" :items="tableProducts" :headers="tableHeaders" :loading="tableLoading"
+            :items-length="tableItemsLength" :search="tableSearch" hover @update:items-per-page="tableLoadItems"
+            @update:sort-by="tableLoadItems" @update:page="tableLoadItems" class="RVtitle">
+            <template #top>
+              <VTextField label="搜尋" append-icon="mdi-magnify" @click:append="tableApplySearch"
+                @keydown.enter="tableApplySearch" v-model="tableSearch" class="color"></VTextField>
+            </template>
+            <template #[`item.image`]="{ item }">
+              <VImg :src="item.raw.image" max-width="100px" class="mx-auto" aspect-ratio="1" cover=""></VImg>
+            </template>
+            <template #[`item.sell`]="{ item }">
+              <VIcon icon="mdi-check" v-if="item.raw.sell"></VIcon>
+            </template>
+            <template #[`item.edit`]="{ item }">
+              <VBtn icon="mdi-pencil" @click="tableEditItem(item.raw)" variant="text"></VBtn>
+            </template>
+          </VDataTableServer>
+        </VCol>
+      </VRow>
+    </VContainer>
+    <VDialog persistent width="500px" v-model="dialog">
+      <VForm :disabled="isSubmitting" @submit.prevent="submit">
+        <VCard>
+          <VCardTitle>{{ dialogId.length > 0 ? '編輯商品' : '新增商品' }}</VCardTitle>
+          <VCardText>
+            <VTextField label="名稱" v-model="name.value.value" :error-messages="name.errorMessage.value"></VTextField>
+            <VTextField label="價格" v-model.number="price.value.value" :error-messages="price.errorMessage.value"
+              type="number" min="0"></VTextField>
+            <VTextarea label="說明" v-model="description.value.value" :error-messages="description.errorMessage.value">
+            </VTextarea>
+            <VSelect label="分類" v-model="category.value.value" :error-messages="category.errorMessage.value"
+              :items="categories"></VSelect>
+            <VSelect label="分類2" v-model="categorytwo.value.value" :error-messages="categorytwo.errorMessage.value"
+              :items="categorytwoitem">
+            </VSelect>
 
-          <VCheckbox label="上架" v-model="sell.value.value" :error-messages="sell.errorMessage.value"></VCheckbox>
-          <VueFileAgent v-model="files" v-model:raw-model-value="rawFiles" :max-files="1" max-size="2MB"
-            accept="image/jpg,image/jpeg,image/png" :multiple="false" :error-text="{ type: '檔案格式錯誤', size: '檔案太大' }"
-            help-text="選擇檔案或拖放到這裡" deletable ref="fileAgent"></VueFileAgent>
-        </VCardText>
-        <VCardActions>
-          <VSpacer></VSpacer>
-          <VBtn color="red" @click="closeDialog" :loading="isSubmitting">取消</VBtn>
-          <VBtn color="green" type="submit" :loading="isSubmitting">送出</VBtn>
-        </VCardActions>
-      </VCard>
-    </VForm>
-  </VDialog>
+            <VCheckbox label="上架" v-model="sell.value.value" :error-messages="sell.errorMessage.value"></VCheckbox>
+            <VueFileAgent v-model="files" v-model:raw-model-value="rawFiles" :max-files="1" max-size="2MB"
+              accept="image/jpg,image/jpeg,image/png" :multiple="false" :error-text="{ type: '檔案格式錯誤', size: '檔案太大' }"
+              help-text="選擇檔案或拖放到這裡" deletable ref="fileAgent"></VueFileAgent>
+          </VCardText>
+          <VCardActions>
+            <VSpacer></VSpacer>
+            <VBtn color="red" @click="closeDialog" :loading="isSubmitting">取消</VBtn>
+            <VBtn color="green" type="submit" :loading="isSubmitting">送出</VBtn>
+          </VCardActions>
+        </VCard>
+      </VForm>
+    </VDialog>
+  </div>
 </template>
 
 <script setup>

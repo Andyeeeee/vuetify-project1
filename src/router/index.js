@@ -142,24 +142,46 @@ const routes = [
 		children: [
 			{
 				path: '',
-				name: 'DataSetting',
-				component: () => import(/* webpackChunkName: "member-DataSetting" */ '@/views/front/DataSetting.vue'),
+				name: 'OrdersView',
+				component: () => import(/* webpackChunkName: "member-OrdersView" */ '@/views/front/OrdersView.vue'),
 				meta: {
-					title: 'KK | 資料編輯',
-					login: true,
-					admin: false
-				}
-			},
-			{
-				path: 'noworder',
-				name: 'NowOrder',
-				component: () => import(/* webpackChunkName: "member-NowOrder" */ '@/views/front/NowOrder.vue'),
-				meta: {
-					title: 'KK | 訂單進度',
+					title: 'KK | 訂單',
 					login: true,
 					admin: false
 				}
 			}
+			// ,
+			// {
+			// 	path: 'member',
+			// 	name: 'MemberOrdersView',
+			// 	component: () => import(/* webpackChunkName: "member-OrdersView" */ '@/views/front/OrdersView.vue'),
+			// 	meta: {
+			// 		title: 'KK | 訂單',
+			// 		login: true,
+			// 		admin: false
+			// 	}
+			// },
+			// ,
+			// {
+			// 	path: '',
+			// 	name: 'DataSetting',
+			// 	component: () => import(/* webpackChunkName: "member-DataSetting" */ '@/views/front/DataSetting.vue'),
+			// 	meta: {
+			// 		title: 'KK | 資料編輯',
+			// 		login: true,
+			// 		admin: false
+			// 	}
+			// },
+			// {
+			// 	path: 'noworder',
+			// 	name: 'NowOrder',
+			// 	component: () => import(/* webpackChunkName: "member-NowOrder" */ '@/views/front/NowOrder.vue'),
+			// 	meta: {
+			// 		title: 'KK | 訂單進度',
+			// 		login: true,
+			// 		admin: false
+			// 	}
+			// }
 			// {
 			// 	path: 'products',
 			// 	name: 'AdminProducts',

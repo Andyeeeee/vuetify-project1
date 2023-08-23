@@ -1,6 +1,6 @@
 <template>
-  <section style="background-color: #004886;">
-    <h1 class="text-center">會員登入</h1>
+  <section id="LoginView">
+    <!-- <h1 class="text-center">會員登入</h1> -->
     <v-container>
       <v-img :width="180" aspect-ratio="16/9" cover src="@/image/icon.jpg" style="margin: auto;"></v-img>
       <v-col cols="4" style="margin: auto;" class="text-center justify-center">

@@ -13,10 +13,14 @@
 @import './global'; // @import '_AdminLayout.scss';
 @import '_FrontLayout.scss';
 @import './HomeView';
-@import './TitlePicture';
 @import '_AboutUss.scss';
-@import '_MemberLayout.sass';
+@import '_MemberLayout.scss';
 @import '_OrdersView.scss';
+@import '_ProductsView.scss';
+@import '_LoginView.scss';
+@import '_ProductCard.scss';
+@import './TitlePicture';
+@import '_FooTer.scss'
 // @import "_ProductCard.scss"
 // @import "_ProductsView.scss"
 // @import "_CartView.scss"

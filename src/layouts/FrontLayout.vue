@@ -1,29 +1,14 @@
 <template>
 	<div id="FrontLayout">
-		<v-navigation-drawer
-			v-if="isMobile"
-			v-model="drawer"
-			location="right"
-			temporary
-		>
+		<v-navigation-drawer v-if="isMobile" v-model="drawer" location="right" temporary>
 			<v-list>
-				<template
-					v-for="navItem in navItems"
-					:key="navItem.to"
-				>
-					<v-list-item
-						v-if="navItem.show"
-						:to="navItem.to"
-					>
+				<template v-for="navItem in navItems" :key="navItem.to">
+					<v-list-item v-if="navItem.show" :to="navItem.to">
 						<template #prepend>
 							<v-icon :icon="navItem.icon" />
 						</template>
 						<template #append>
-							<v-badge
-								color="success"
-								:content="cart.toString()"
-								v-if="navItem.to === '/cart'"
-							/>
+							<v-badge color="success" :content="cart.toString()" v-if="navItem.to === '/cart'" />
 						</template>
 						<v-list-item-title>{{ navItem.text }}</v-list-item-title>
 					</v-list-item>
@@ -40,44 +25,19 @@
 		<v-app-bar id="FrontLayout">
 			<v-app-bar-title id="FrontLayout">
 				<div class="d-flex">
-					<v-img
-						src="@/image/logo.jpg"
-						max-width="70"
-						cover
-						aspect-ratio="1"
-						@click="toHome()"
-					/>
-					<span
-						class="ms-5"
-						style="line-height: 70px; font-size: 32px"
-					>
-						沐對
+					<v-img src="@/image/logo.jpg" max-width="70" cover aspect-ratio="1" @click="toHome()" />
+					<span class="ms-5" style="line-height: 70px; font-size: 32px">
+						MoonDay義式小廚房
 					</span>
 				</div>
 			</v-app-bar-title>
 			<v-spacer />
-			<v-app-bar-nav-icon
-				v-if="isMobile"
-				@click="drawer = true"
-			/>
+			<v-app-bar-nav-icon v-if="isMobile" @click="drawer = true" />
 			<template v-if="!isMobile">
-				<template
-					v-for="navItem in navItems"
-					:key="navItem.to"
-				>
-					<v-btn
-						variant="text"
-						:prepend-icon="navItem.icon"
-						:to="navItem.to"
-						v-if="navItem.show"
-					>
+				<template v-for="navItem in navItems" :key="navItem.to">
+					<v-btn variant="text" :prepend-icon="navItem.icon" :to="navItem.to" v-if="navItem.show">
 						{{ navItem.text }}
-						<v-badge
-							color="success"
-							:content="cart.toString()"
-							floating
-							v-if="navItem.to === '/cart'"
-						/>
+						<v-badge color="success" :content="cart.toString()" floating v-if="navItem.to === '/cart'" />
 					</v-btn>
 				</template>
 				<!-- <v-btn v-if="!isMobile && isLogin" variant="text" prepend-icon="mdi-logout" @click="logout">
@@ -118,7 +78,7 @@ const navItems = computed(() => {
 		{ to: '/cart', icon: 'mdi-cart-variant', show: isLogin.value },
 		{ to: '/', text: '首頁菜單', show: true },
 		{ to: '/login', text: '會員登入', show: !isLogin.value },
-		{ to: '/orders', text: '訂單', show: isLogin.value },
+		{ to: '/orders', text: '訂單', show: isLogin.value && isAdmin.value },
 		{ to: '/admin', text: '管理', show: isLogin.value && isAdmin.value },
 		{ to: '/member', text: '會員資料', show: isLogin.value && !isAdmin.value },
 		{ to: '/aboutus', text: '關於我們', show: true }

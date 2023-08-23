@@ -1,24 +1,13 @@
 <template style="background-color: #003c6c">
 	<div id="AdminLayout">
-		<VNavigationDrawer
-			permanent
-			id="AdminLayout"
-		>
+		<VNavigationDrawer permanent class="layout-baground">
 			<VList>
-				<VListItem
-					:prepend-avatar="avatar"
-					:title="account"
-				></VListItem>
+				<VListItem :prepend-avatar="avatar" :title="account"></VListItem>
 			</VList>
 			<VDivider></VDivider>
 			<VList>
-				<VListItem
-					v-for="navItem in navItems"
-					:key="navItem.to"
-					:to="navItem.to"
-					:title="navItem.title"
-					:prepend-icon="navItem.icon"
-				></VListItem>
+				<VListItem v-for="navItem in navItems" :key="navItem.to" :to="navItem.to" :title="navItem.title"
+					:prepend-icon="navItem.icon"></VListItem>
 				<v-list-item @click="logout">
 					<template #prepend>
 						<v-icon icon="mdi-logout" />

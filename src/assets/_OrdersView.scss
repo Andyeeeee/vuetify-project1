@@ -1,3 +1,15 @@
-.v-application__wra {
-	background-color: white;
+#OrdersView{
+	v-table{
+		height: 80%;
+	}
+	thead{
+		background-color:#FCAE11;
+		color: black
+		!important;
+	}
+	tbody{
+		background-color:#004886;
+		color:white
+		;
+	}
 }

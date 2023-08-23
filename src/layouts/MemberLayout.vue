@@ -17,7 +17,7 @@
 			</VList>
 		</VNavigationDrawer>
 		<VMain>
-			<RouterView style="margin-top: -300px"></RouterView>
+			<RouterView></RouterView>
 		</VMain>
 	</div>
 </template>
@@ -42,8 +42,9 @@ const navItems = [
 	// { to: '/admin/products', title: '商品管理', icon: 'mdi-shopping' },
 	// { to: '/admin/orders', title: '訂單管理', icon: 'mdi-format-list-numbered' },
 
-	{ to: '/', title: '會員資料', icon: 'mdi-account' },
-	{ to: '/member/noworder', title: '訂單進度', icon: 'mdi-clipboard-text-search-outline' },
+	// { to: '/', title: '會員資料', icon: 'mdi-account' },
+	// { to: '/member/noworder', title: '訂單進度', icon: 'mdi-clipboard-text-search-outline' },
+	{ to: '/member', title: '訂單', icon: 'mdi-script-text-outline' },
 	{ to: '/', title: '回首頁', icon: 'mdi-home' }
 ]
 

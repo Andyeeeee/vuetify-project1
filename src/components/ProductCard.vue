@@ -1,46 +1,40 @@
 <template>
-	<v-card>
-		<div style="display: flex; background-color: #b3fff2; border: 5px #fcae11 solid">
-			<div>
-				<v-img
+	<div id="ProductCard">
+
+		<v-card>
+			<div class="card">
+				<div>
+					<v-img
 					:src="image"
 					cover
 					class="image"
-					style="border-right: 5px #2b2b2b solid"
 
-				></v-img>
-			</div>
-			<div
+					></v-img>
+				</div>
+				<div
 				class="food-name"
-				style="color: #4bc96a"
 			>
 				<v-card-title>
-					<router-link
-						style="color: #000000 !important"
-						:to="'/products/' + _id"
-						class="text-primary text-decoration-none"
-					>
-						{{ name }}
-					</router-link>
-				</v-card-title>
-				<v-card-text>
-					<pre>{{ description }}</pre>
-				</v-card-text>
-			</div>
-			<v-spacer></v-spacer>
-			<div
-				class="price-shoppimg"
-				style="color: #000000"
-			>
-				<v-card-subtitle>${{ price }}</v-card-subtitle>
-				<VBtn
-					color="#003c6c"
+				{{ name }}
+			</v-card-title>
+			<v-card-text>
+				<pre>{{ description }}</pre>
+			</v-card-text>
+		</div>
+		<v-spacer></v-spacer>
+		<div
+		class="price-shopping"
+		>
+		<v-card-subtitle class="price">${{ price }}</v-card-subtitle>
+		<VBtn
+		color="#003c6c"
 					prepend-icon="mdi-cart"
 					@click="addCart"
-				></VBtn>
+					></VBtn>
+				</div>
 			</div>
-		</div>
-	</v-card>
+		</v-card>
+	</div>
 </template>
 
 <script setup>
@@ -102,4 +96,10 @@ const addCart = async () => {
 		})
 	}
 }
+//					<router-link
+// style="color: #000000 !important"
+// 					:to="'/products/' + _id"
+// 					class="text-primary text-decoration-none"
+// 					>
+// 				</router-link>
 </script>

@@ -1,0 +1,36 @@
+#LoginView{
+  background-color: #004886;
+  height: 100vh;
+}
+
+.v-col-4{
+  max-width: none;
+  margin: auto;
+}
+
+.v-text-field {
+margin: auto;}
+
+hr{
+  margin: auto;
+  width: 80%;
+}
+
+@include md{
+  .v-text-field {
+    width: 60%;
+  }
+  hr{
+    width: 60%
+  }
+}
+
+
+@include lg{
+  .v-text-field {
+    width: 40%;
+  }
+  hr{
+    width: 40%
+  }
+}

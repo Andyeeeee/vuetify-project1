@@ -1,6 +1,9 @@
 #HomeView {
-	h1 {
-		background-color: #004886;
+.v-card--variant-elevated {
+		box-shadow: none !important;
+	}
+	h1{
+		// background-color: #004886;
 		// font-size: 40px;
 		// margin: 10px;
 	} // 底色
@@ -31,7 +34,7 @@
 		}
 		.v-col-4 {
 			// border: 1px solid black;
-			color: white;
+			// color: white;
 			padding: 0;
 		}
 		.button {
@@ -61,7 +64,7 @@
 			font-size: 20px;
 		}
 		.element.style {
-			background-color: white;
+			// background-color: white;
 		}
 	}
 
@@ -195,11 +198,11 @@
 
 //類別第2層
 .v-application__wrap {
-	background-color: #ffffff;
+	// background-color: #ffffff;
 }
 #sort {
 	.v-btn {
-		background-color: #b92929;
+		// background-color: #b92929;
 	}
 }
 // .border {

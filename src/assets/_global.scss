@@ -1,8 +1,12 @@
 .v-application__wrap {
 	background-color: #ffffff;
 }
+.layout-baground{
+	background-color: #004886 !important;
+}
+
 h1 {
-	background-color: #ffffff;
+	// background-color: #ffffff;
 	font-size: 40px;
 	margin-top: 10px;
 	margin-bottom: 50px;
@@ -10,19 +14,40 @@ h1 {
 }
 
 h2 {
-	background-color: #ffffff;
+	// background-color: #ffffff;
 	font-size: 40px;
 	text-align: center;
 }
 
+h3{
+	color: black ;
+	font-size: 30px;
+}
+
+thead{
+	background-color:#FCAE11;
+	color: black
+	!important;
+}
+tbody{
+	background-color:#004886;
+	color:white
+	;
+}
+
+
 .section2 {
 	padding-bottom: 50px;
 }
-section {
-	background-color: #004886;
-}
+// section {
+// 	background-color: #004886;
+// }
 section {
 	padding-bottom: 200px;
+}
+
+.footr{
+	padding-bottom: 0;
 }
 
 @include md {
@@ -35,6 +60,9 @@ section {
 	h2 {
 		font-size: 40px;
 	}
+	h3{
+		font-size: 40px;
+	}
 }
 
 @include lg {
@@ -42,5 +70,8 @@ section {
 		font-size: 50px;
 		margin: 20px;
 		margin-bottom: 60px;
+	}
+	h3{
+		font-size: 50px;
 	}
 }

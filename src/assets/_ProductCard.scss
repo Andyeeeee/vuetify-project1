@@ -1,18 +1,52 @@
-.v-card .v-card-subtitle
-  line-height: 1.25rem
-  line-height: 50px
-  font-size: 26px
-  text-align: end
-  padding: 5px
-.food-name
-  line-height: 20px
-  text-align: start
-.image
-  height: 100px
-  width: 100px
+#ProductCard{
+  .card{
+    display: flex;
+    background-color: #ffba2f;
+  }
+  .v-img{
+    border-right: 5px #2b2b2b ;
+  }
+  .food-name{
+    width: 50%;
+  }
 
-.price-shoppimg
-  text-align: end
+  .v-card-title{
+    color: #2b2b2b;
+    padding: 0;
+    line-height: 3rem;
+  }
+  .v-card-text{
+    color: #305dab;
+    padding: 0;
+    line-height: 1rem;
+  }
+  .price-shopping{
+    // width: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: black;
+  }
+  .v-card-subtitle{
+    font-size: 30px;
+  }
 
-pre
-  text-align: start
+  .v-responsive__sizer{
+    padding-bottom: 0 !important;
+  }
+
+
+@include md{
+  .v-card-subtitle{
+    font-size: 30px !important;
+    line-height: 50px;
+  }
+}
+
+@include lg{
+  .v-card-subtitle{
+    font-size: 30px !important;
+    line-height: 50px;
+  }
+}
+}
