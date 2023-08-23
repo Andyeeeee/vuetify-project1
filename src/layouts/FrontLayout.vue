@@ -26,7 +26,7 @@
 			<v-app-bar-title id="FrontLayout">
 				<div class="d-flex">
 					<v-img src="@/image/logo.jpg" max-width="70" cover aspect-ratio="1" @click="toHome()" />
-					<span class="ms-5" style="line-height: 70px; font-size: 32px">
+					<span class="ms-5 icon-text">
 						MoonDay義式小廚房
 					</span>
 				</div>

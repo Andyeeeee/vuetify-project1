@@ -2,8 +2,8 @@
 	<!-- <tite></tite> -->
 	<!-- <layout></layout> -->
 	<div id="HomeView">
-		<tite></tite>
-		<!-- <swiper></swiper> -->
+		<!-- <tite></tite> -->
+		<swiper style="height: 500px;"></swiper>
 		<!-- <section class="section1 main-picture">
 			<v-img
 				:width="auto"
@@ -400,7 +400,7 @@ import ProductCard from '@/components/ProductCard.vue'
 import layout from '@/components/FrontLayout.vue'
 import tite from '@/components/TitlePicture.vue'
 import FooTr from '@/components/FooTer.vue'
-// import swiper from '@/components/SwiPer.vue'
+import swiper from '@/components/SwiPer.vue'
 
 const createSnackbar = useSnackbar()
 

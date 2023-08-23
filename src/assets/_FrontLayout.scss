@@ -3,4 +3,27 @@
 	.v-toolbar__extension {
 		background-color: #004886;
 	}
+	.icon-text{
+		line-height: 70px;
+		font-size: 20px; 
+	}
+
+	.v-toolbar-title__placeholder {
+		width: 280px;
+	}
+
+	@include md{
+		.icon-text{
+		font-size: 28px
+		}
+		.v-toolbar-title__placeholder {
+			width: auto;
+		}
+	}
+
+	@include lg{
+		.icon-text{
+		font-size: 32px
+		}
+	}
 }
