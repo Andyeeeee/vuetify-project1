@@ -388,9 +388,9 @@
 			<div>訂位專線：(02) 2631 2626</div>
 			<div>統編： 31864992</div>
 		</section>
-		<!-- <FooTr></FooTr> -->
+
 	</div>
-	<!-- <FooTer></FooTer> -->
+
 </template>
 <script setup>
 import { api } from '@/plugins/axios'
@@ -399,7 +399,7 @@ import { useSnackbar } from 'vuetify-use-dialog'
 import ProductCard from '@/components/ProductCard.vue'
 import layout from '@/components/FrontLayout.vue'
 import tite from '@/components/TitlePicture.vue'
-// import FooTr from '@/components/FooTer.vue'
+
 import swiper from '@/components/SwiPer.vue'
 
 const createSnackbar = useSnackbar()
