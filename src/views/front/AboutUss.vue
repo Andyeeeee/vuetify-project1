@@ -72,14 +72,23 @@
 		</section>
 
 		<section class="footr">
-			<footr></footr>
+			<!-- <footr></footr> -->
+			<section>
+  <div id="footer">
+    <img src="@/image/icon.jpg" alt="" >
+    <div>114台北市內湖區民權東路六段296巷36號</div>
+    <div>訂位專線：(02) 2631 2626</div>
+    <div>統編： 31864992</div>
+  </div>
+			</section>
+
 		</section>
 	</div>
 </template>
 
 <script setup>
 import tite from '@/components/TitlePicture.vue'
-import footr from '@/components/FooTer.vue'
+// import footr from '@/components/FooTer.vue'
 // 這邊很詭異
 </script>
 <style>
