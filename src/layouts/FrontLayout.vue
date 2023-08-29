@@ -52,7 +52,7 @@
 			<router-view :key="$route.path" />
 		</v-main>
 	</div>
-	<h1>此網頁做為練習</h1>
+	<h1 style="color: black;">此網頁做為練習</h1>
 </template>
 
 <script setup>
