@@ -388,9 +388,9 @@
 			<div>訂位專線：(02) 2631 2626</div>
 			<div>統編： 31864992</div>
 		</section>
+		<h1 style="color: black !important;">此網頁做為練習</h1>
 
 	</div>
-
 </template>
 <script setup>
 import { api } from '@/plugins/axios'
