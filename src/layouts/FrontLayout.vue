@@ -25,9 +25,11 @@
 		<v-app-bar id="FrontLayout">
 			<v-app-bar-title id="FrontLayout">
 				<div class="d-flex">
+					<!-- <v-img src="@/image/logo.jpg" max-width="70" cover aspect-ratio="1" @click="toHome()" /> -->
 					<v-img src="@/image/logo.jpg" max-width="70" cover aspect-ratio="1" @click="toHome()" />
 					<span class="ms-5 icon-text">
-						MoonDay義式小廚房
+						<!-- MoonDay義式小廚房 -->
+						義式料理
 					</span>
 				</div>
 			</v-app-bar-title>
@@ -50,6 +52,7 @@
 			<router-view :key="$route.path" />
 		</v-main>
 	</div>
+	<h1>此網頁做為練習</h1>
 </template>
 
 <script setup>
@@ -81,7 +84,7 @@ const navItems = computed(() => {
 		{ to: '/orders', text: '訂單', show: isLogin.value && isAdmin.value },
 		{ to: '/admin', text: '管理', show: isLogin.value && isAdmin.value },
 		{ to: '/member', text: '會員資料', show: isLogin.value && !isAdmin.value },
-		{ to: '/aboutus', text: '關於我們', show: true }
+		// { to: '/aboutus', text: '關於我們', show: true }
 	]
 })
 
