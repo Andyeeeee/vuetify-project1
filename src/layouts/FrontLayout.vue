@@ -3,7 +3,7 @@
 		<v-navigation-drawer v-if="isMobile" v-model="drawer" location="right" temporary>
 			<v-list>
 				<template v-for="navItem in navItems" :key="navItem.to">
-					<v-list-item v-if="navItem.show" :to="navItem.to">
+					<v-list-item v-if="navItem.show" :to="navItem.to" :active="false">
 						<template #prepend>
 							<v-icon :icon="navItem.icon" />
 						</template>
@@ -37,7 +37,7 @@
 			<v-app-bar-nav-icon v-if="isMobile" @click="drawer = true" />
 			<template v-if="!isMobile">
 				<template v-for="navItem in navItems" :key="navItem.to">
-					<v-btn variant="text" :prepend-icon="navItem.icon" :to="navItem.to" v-if="navItem.show">
+					<v-btn variant="text" :prepend-icon="navItem.icon" :to="navItem.to" v-if="navItem.show" :active="false">
 						{{ navItem.text }}
 						<v-badge color="success" :content="cart.toString()" floating v-if="navItem.to === '/cart'" />
 					</v-btn>
@@ -83,7 +83,7 @@ const navItems = computed(() => {
 		{ to: '/orders', text: '訂單', show: isLogin.value && isAdmin.value },
 		{ to: '/admin', text: '管理', show: isLogin.value && isAdmin.value },
 		{ to: '/member', text: '會員資料', show: isLogin.value && !isAdmin.value },
-		// { to: '/aboutus', text: '關於我們', show: true }
+		{ to: '/aboutus', text: '關於我們', show: true }
 	]
 })
 

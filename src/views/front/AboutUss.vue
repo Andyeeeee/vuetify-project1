@@ -63,26 +63,24 @@
 							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 					<div class="right">
-						<p>地址:114台北市內湖區民權東路六段296巷36號</p>
-						<p>地址:電話：(02) 2631 2626</p>
+						<p>地址:114台北市內湖區</p>
+						<p>地址:電話：(02) 1234 5678</p>
 						<p>地址:LINE:123456</p>
 					</div>
 				</div>
 			</v-container>
 		</section>
 
-		<section class="footr">
-			<!-- <footr></footr> -->
-			<section>
-  <div id="footer">
-    <img src="@/image/icon.jpg" alt="" >
-    <div>114台北市內湖區民權東路六段296巷36號</div>
-    <div>訂位專線：(02) 2631 2626</div>
-    <div>統編： 318649922</div>
-  </div>
-			</section>
-
+		<!-- <footr></footr> -->
+		<section style="padding-bottom: 0;">
+			<div id="footer">
+				<img src="@/image/icon.jpg" alt="">
+				<div>114台北市內湖區</div>
+				<div>訂位專線：(02) 1234 5678</div>
+				<div>統編： xxxxxxxxx</div>
+			</div>
 		</section>
+
 	</div>
 </template>
 

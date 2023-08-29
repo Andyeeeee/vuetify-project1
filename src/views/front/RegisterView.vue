@@ -1,5 +1,5 @@
 <template>
-  <section style="background-color: #004886;">
+  <section style="background-color: #004886;height:100vh;">
     <!-- <h1 class="text-center">註冊會員</h1> -->
     <v-container>
       <v-img :width="180" aspect-ratio="16/9" cover src="@/image/icon.jpg" style="margin: auto;"></v-img>
