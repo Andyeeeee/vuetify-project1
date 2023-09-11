@@ -28,8 +28,7 @@
 					<!-- <v-img src="@/image/logo.jpg" max-width="70" cover aspect-ratio="1" @click="toHome()" /> -->
 					<v-img src="@/image/logo.jpg" max-width="70" cover aspect-ratio="1" @click="toHome()" />
 					<span class="ms-5 icon-text">
-						<!-- MoonDay義式小廚房 -->
-						義式料理
+						MoonDay義式小廚房
 					</span>
 				</div>
 			</v-app-bar-title>

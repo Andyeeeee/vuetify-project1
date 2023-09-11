@@ -4,33 +4,24 @@
 		<v-card>
 			<div class="card">
 				<div>
-					<v-img
-					:src="image"
-					cover
-					class="image"
-
-					></v-img>
+					<v-img :src="image" cover class="image"></v-img>
 				</div>
-				<div
-				class="food-name"
-			>
-				<v-card-title>
-				{{ name }}
-			</v-card-title>
-			<v-card-text>
-				<pre>{{ description }}</pre>
-			</v-card-text>
-		</div>
-		<v-spacer></v-spacer>
-		<div
-		class="price-shopping"
-		>
-		<v-card-subtitle class="price">${{ price }}</v-card-subtitle>
-		<VBtn
-		color="#003c6c"
+				<div class="food-name">
+					<v-card-title>
+						{{ name }}
+					</v-card-title>
+					<v-card-text>
+						<pre>{{ description }}</pre>
+					</v-card-text>
+				</div>
+				<v-spacer></v-spacer>
+				<div class="price-shopping">
+					<v-card-subtitle class="price">${{ price }}</v-card-subtitle>
+					<!-- <VBtn
+							color="#003c6c"
 					prepend-icon="mdi-cart"
 					@click="addCart"
-					></VBtn>
+					></VBtn> -->
 				</div>
 			</div>
 		</v-card>

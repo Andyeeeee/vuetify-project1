@@ -33,7 +33,7 @@
 									<!-- 第二層 第一個 次類別  -->
 									<!-- <v-card style="background-color: #004886"> -->
 									<v-tabs v-model="tab1" bg-color="#004886" style="height: auto">
-										<v-row class="margin-md0" style="margin: -12px -12px 0px -12px">
+										<v-row class="margin-md0">
 											<v-col cols="4" lg="2">
 												<v-tab value="one1" style="width: 100%">青醬</v-tab></v-col>
 											<v-col cols="4" lg="2">
@@ -382,12 +382,10 @@
 			</v-card>
 		</section>
 
+		<footr></footr>
+
 		<section id="footer" style="text-align: center; background-color: #003158; margin-bottom: 0;" class="section3">
-			<img src="@/image/icon.jpg" alt="" width="120" style="margin: 50px" />
-			<div>114台北市內湖區</div>
-			<div>訂位專線：(02) 1234 5678</div>
-			<div>統編： xxxxxxxxx</div>
-			<h1 style="color: black !important;">此網頁做為練習</h1>
+			<div style="color: black !important;">此網頁做為練習</div>
 		</section>
 
 	</div>
@@ -397,6 +395,7 @@ import { api } from '@/plugins/axios'
 import { ref } from 'vue'
 import { useSnackbar } from 'vuetify-use-dialog'
 import ProductCard from '@/components/ProductCard.vue'
+import footr from '@/components/FooTer.vue'
 import layout from '@/components/FrontLayout.vue'
 import tite from '@/components/TitlePicture.vue'
 

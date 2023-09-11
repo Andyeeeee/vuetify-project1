@@ -1,7 +1,34 @@
 #HomeView {
+
+	// v-row{
+	// 	margin: -7px -12px 0px -12px !important;
+	// }
+
+	// #HomeView .section2 .margin-md0 .v-tab{
+
+	// }
+
+	//高度調整
+	.margin-md0 {
+			margin: 0px -12px 0px  !important;
+			width: 100%;
+			// border: 1px white solid;
+		}
+
+	element.style {
+    margin: 0px !important;
+}
+
+//調整第2~4層的第二層高度 [輕鬆點 茶..這層]
+// 	.v-tabs--density-default {
+//     --v-tabs-height: 100px;
+// }
+
+//去除卡片影子
 .v-card--variant-elevated {
 		box-shadow: none !important;
 	}
+
 	h1{
 		// background-color: #004886;
 		// font-size: 40px;
@@ -53,12 +80,13 @@
 		.v-slide-group__content {
 			width: 100%;
 			text-align: center;
+
 		}
 		.p-0 .v-btn {
 			// width: 100%;
 		}
 		.margin-md0 .v-tab {
-			height: 100px;
+			height: 48px;
 		}
 		.v-card-subtitle {
 			font-size: 20px;
@@ -116,11 +144,11 @@
 		.v-container {
 			background-color: #004886;
 		}
-		.margin-md0 {
-			margin: -12px -12px 0px -12px !important;
-			width: 100%;
-			// border: 1px white solid;
-		}
+		// .margin-md0 {
+		// 	margin: 0px -12px 0px  !important;
+		// 	width: 100%;
+		// 	// border: 1px white solid;
+		// }
 		.v-card-subtitle {
 			font-size: 50px;
 		}

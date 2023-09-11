@@ -1,18 +1,41 @@
 #AboutUss {
 	background-color: #004886;
-}
+	
+	h2{
+		// background-color:#ffba2f;
+		color: white;
+		
+	}
 
-//公告
-.section3 {
-	.announcement {
-		background-color: #003158;
-		width: 90%;
-		margin: auto;
-		text-align: start;
+	//公告
+	.section3 {
+		margin-top: 50px;
+		.announcement {
+			background-color: wheat !important;
+			border: #ffba2f 5px solid;
+			color: black;
+			font-family:cursive;
+			font-weight:bold;
+		  margin: auto;
+	   	text-align: start;
 		div {
 			font-size: 25px;
+			padding: 30px;
+		}
+		tr{
+			border: black 12px solid;
+			td{
+				border-bottom: black 1px solid;
+			}
+			td:last-child{
+				text-align: end;
+			}
 		}
 	}
+}
+
+.v-col-lg-3 {
+	padding: 0;
 }
 
 .center {
@@ -30,7 +53,7 @@ iframe {
 	.section3 {
 		.announcement {
 			background-color: #003158;
-			width: 80%;
+			// width: 80%;
 			margin: auto;
 			text-align: start;
 			div {
@@ -49,13 +72,17 @@ iframe {
 	.section3 {
 		.announcement {
 			background-color: #003158;
-			width: 70%;
+			// width: 70%;
 			margin: auto;
 			text-align: start;
 			div {
 				font-size: 35px;
 			}
 		}
+	}
+	
+	.v-container{
+		width: 60%;
 	}
 
 	.flex {
@@ -70,4 +97,6 @@ iframe {
 		padding-left: 20px;
 		text-align: left;
 	}
+}
+
 }

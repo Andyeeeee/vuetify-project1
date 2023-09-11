@@ -1,7 +1,7 @@
 #ProductCard{
   .card{
     display: flex;
-    background-color: #ffba2f;
+    background-color: #004886;
   }
   .v-img{
     border-right: 5px #2b2b2b ;
@@ -11,12 +11,12 @@
   }
 
   .v-card-title{
-    color: #2b2b2b;
+    color: #ffffff;
     padding: 0;
     line-height: 3rem;
   }
   .v-card-text{
-    color: #305dab;
+    color: #d4d4d4;
     padding: 0;
     line-height: 1rem;
   }
@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    color: black;
+    color: white;
   }
   .v-card-subtitle{
     font-size: 30px;
