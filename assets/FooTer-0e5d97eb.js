@@ -1,0 +1,1 @@
+import{_ as t}from"./icon-05a315e1.js";import{aI as s,a2 as e,a3 as _,aa as o}from"./index-22d0d89d.js";const c={},n={id:"footer"},r=o("img",{src:t,alt:""},null,-1),a=o("div",null,"114台北市內湖區",-1),i=o("div",null,"訂位專線：(02) 1234 5678",-1),d=o("div",null,"統編： xxxxxxxxx",-1),l=[r,a,i,d];function x(f,m){return e(),_("div",n,l)}const u=s(c,[["render",x]]);export{u as f};
