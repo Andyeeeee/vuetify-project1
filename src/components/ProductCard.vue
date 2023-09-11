@@ -17,11 +17,7 @@
 				<v-spacer></v-spacer>
 				<div class="price-shopping">
 					<v-card-subtitle class="price">${{ price }}</v-card-subtitle>
-					<!-- <VBtn
-							color="#003c6c"
-					prepend-icon="mdi-cart"
-					@click="addCart"
-					></VBtn> -->
+					<VBtn color="#003c6c" prepend-icon="mdi-cart" @click="addCart"></VBtn>
 				</div>
 			</div>
 		</v-card>
