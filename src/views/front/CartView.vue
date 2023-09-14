@@ -36,7 +36,7 @@
                 </td>
                 <td>{{ item.quantity * item.product.price }}</td>
                 <td>
-                  <v-btn variant="icon" icon="mdi-delete" @click="updateCart(item.product._id, item.product._id * -1)">
+                  <v-btn variant="text" icon="mdi-delete" @click="updateCart(item.product._id, item.quantity * -1)">
                   </v-btn>
                 </td>
               </tr>
