@@ -47,16 +47,48 @@
     font-size: 30px !important;
     line-height: 50px;
   }
-  v-img{
-    width: 150px;
-    height : 150px;
-  }
 }
 
 @include lg{
   .v-card-subtitle{
     font-size: 30px !important;
-    line-height: 50px;
+  }
+  .v-img{
+    width:  200px;
+    height : 200px;
+  }
+  .v-container{
+    display: none;
+  }
+  .price{
+    font-size: 20px !important;
+  }
+  .v-card-title{
+    font-size: 20px !important;
+  }
+  .price-shopping{
+    font-size: 20px !important;
+    
+  }
+  .card{
+    display: flex;
+    // background-color: #004886;
+    // background-color: #7198b9;
+    // background-color: #919191;
+    
+    
+  }
+}
+@include xl{
+  v-img{
+    width:  auto;
+    height : auto;
+  }
+  .v-card-title{
+    font-size: 30px !important;
+  }
+  .v-card-subtitle{
+    font-size: 30px !important;
   }
 }
 }
