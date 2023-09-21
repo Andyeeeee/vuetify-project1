@@ -12,7 +12,7 @@ const routes = [
 				name: 'Home',
 				component: () => import(/* webpackChunkName: "home" */ '@/views/front/HomeView.vue'),
 				meta: {
-					title: '購物網',
+					title: 'MoonDay義式小廚房',
 					login: false,
 					admin: false
 				}
@@ -22,7 +22,7 @@ const routes = [
 				name: 'Aboutus',
 				component: () => import(/* webpackChunkName: "aboutus" */ '@/views/front/AboutUss.vue'),
 				meta: {
-					title: '關於我們',
+					title: 'MoonDay義式小廚房',
 					login: false,
 					admin: false
 				}
@@ -32,7 +32,7 @@ const routes = [
 				name: 'Register',
 				component: () => import(/* webpackChunkName: "register" */ '@/views/front/RegisterView.vue'),
 				meta: {
-					title: '購物網 | 註冊',
+					title: 'MoonDay義式小廚房 | 註冊',
 					login: false,
 					admin: false
 				}
@@ -42,7 +42,7 @@ const routes = [
 				name: 'Login',
 				component: () => import(/* webpackChunkName: "login" */ '@/views/front/LoginView.vue'),
 				meta: {
-					title: '購物網 | 登入',
+					title: 'MoonDay義式小廚房 | 登入',
 					login: false,
 					admin: false
 				}
@@ -52,7 +52,7 @@ const routes = [
 				name: 'Product',
 				component: () => import(/* webpackChunkName: "product" */ '@/views/front/ProductView.vue'),
 				meta: {
-					title: '購物網 | 商品',
+					title: 'MoonDay義式小廚房 | 商品',
 					login: false,
 					admin: false
 				}
@@ -62,7 +62,7 @@ const routes = [
 				name: 'Cart',
 				component: () => import(/* webpackChunkName: "cart" */ '@/views/front/CartView.vue'),
 				meta: {
-					title: '購物網 | 購物車',
+					title: 'MoonDay義式小廚房 | 購物車',
 					login: true,
 					admin: false
 				}
@@ -72,7 +72,7 @@ const routes = [
 				name: 'Orders',
 				component: () => import(/* webpackChunkName: "orders" */ '@/views/front/OrdersView.vue'),
 				meta: {
-					title: '購物網 | 訂單',
+					title: 'MoonDay義式小廚房 | 訂單',
 					login: true,
 					admin: false
 				}
@@ -83,7 +83,7 @@ const routes = [
 			// 	name: 'Member',
 			// 	component: () => import(/* webpackChunkName: "orders" */ '@/layouts/MemberLayout.vue'),
 			// 	meta: {
-			// 		title: '購物網 | 訂單',
+			// 		title: 'MoonDay義式小廚房 | 訂單',
 			// 		login: true,
 			// 		admin: false
 			// 	}
@@ -99,7 +99,7 @@ const routes = [
 				name: 'AdminHome',
 				component: () => import(/* webpackChunkName: "admin-home" */ '@/views/admin/HomeView.vue'),
 				meta: {
-					title: '購物網 | 管理',
+					title: 'MoonDay義式小廚房 | 管理',
 					login: true,
 					admin: true
 				}
@@ -109,7 +109,7 @@ const routes = [
 				name: 'AdminProducts',
 				component: () => import(/* webpackChunkName: "admin-products" */ '@/views/admin/ProductsView.vue'),
 				meta: {
-					title: '購物網 | 商品管理',
+					title: 'MoonDay義式小廚房 | 商品管理',
 					login: true,
 					admin: true
 				}
@@ -119,7 +119,7 @@ const routes = [
 				name: 'AdminOrders',
 				component: () => import(/* webpackChunkName: "admin-orders" */ '@/views/admin/OrdersView.vue'),
 				meta: {
-					title: '購物網 | 訂單管理',
+					title: 'MoonDay義式小廚房 | 訂單管理',
 					login: true,
 					admin: true
 				}
@@ -187,7 +187,7 @@ const routes = [
 			// 	name: 'AdminProducts',
 			// 	component: () => import(/* webpackChunkName: "admin-products" */ '@/views/admin/ProductsView.vue'),
 			// 	meta: {
-			// 		title: '購物網 | 商品管理',
+			// 		title: 'MoonDay義式小廚房 | 商品管理',
 			// 		login: true,
 			// 		admin: true
 			// 	}
@@ -197,7 +197,7 @@ const routes = [
 			// 	name: 'AdminOrders',
 			// 	component: () => import(/* webpackChunkName: "admin-orders" */ '@/views/admin/OrdersView.vue'),
 			// 	meta: {
-			// 		title: '購物網 | 訂單管理',
+			// 		title: 'MoonDay義式小廚房 | 訂單管理',
 			// 		login: true,
 			// 		admin: true
 			// 	}
