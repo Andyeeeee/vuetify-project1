@@ -16,19 +16,19 @@
 					</tr>
 					<tr>
 						<td>2.套餐優惠</td>
-						<td></td>
+						<td>8/25</td>
 					</tr>
 					<tr>
 						<td>3.套餐優惠</td>
-						<td></td>
+						<td>8/25</td>
 					</tr>
 					<tr>
 						<td>4.套餐優惠</td>
-						<td></td>
+						<td>8/25</td>
 					</tr>
 					<tr>
 						<td>5.分享送好禮</td>
-						<td></td>
+						<td>8/25</td>
 					</tr>
 					<!-- <div>1.周一公休</div>
 					<div>2.限時活動</div>
