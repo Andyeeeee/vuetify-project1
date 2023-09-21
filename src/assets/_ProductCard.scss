@@ -8,9 +8,11 @@
   }
   .v-img{
     border-right: 5px #2b2b2b ;
+    // padding-right: 10px;
   }
   .food-name{
     width: 50%;
+    padding-left: 5px;
   }
 
   .v-card-title{
@@ -47,6 +49,10 @@
     font-size: 30px !important;
     line-height: 50px;
   }
+  .food-name{
+    padding-left: 10px;
+  }
+
 }
 
 @include lg{
@@ -56,9 +62,13 @@
   .v-img{
     width:  200px;
     height : 200px;
+    // padding-right: 20px !important;
   }
   .v-container{
     display: none;
+  }
+  .food-name{
+    padding-left: 15px;
   }
   .price{
     font-size: 20px !important;
