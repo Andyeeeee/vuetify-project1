@@ -3,56 +3,59 @@
     <v-img :width="auto" aspect-ratio="16/9" cover
       src="https://d37w6prdd1grkb.cloudfront.net/buzzdaily/2086_news_banner.jpg?ndt=104032"></v-img>
   </section> -->
-  <section id="CartView">
-    <v-container>
-      <v-row>
-        <v-col cols="12">
-          <h3 class="text-center">點餐清單</h3>
-        </v-col>
-        <v-col cols="12">
-          <v-table>
-            <thead>
-              <tr class="text-center tr">
-                <th style="color: black;">圖片</th>
-                <th style="color: black;">名稱</th>
-                <th style="color: black;">單價</th>
-                <th style="color: black;">數量</th>
-                <th style="color: black;">小計</th>
-                <th style="color: black;">操作</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="item in cart" :key="item._id" :class="{ 'dg-red-lightrn-4': !item.product.sell }">
-                <td>
-                  <v-img :src="item.product.image" cover width="200" aspect-ratio="1" style="padding: 20px;"
-                    class="img"></v-img>
-                </td>
-                <td>{{ item.product.name }}</td>
-                <td>{{ item.product.price }}</td>
-                <td>
-                  <v-btn variant="text" icon="mdi-plus" @click="updateCart(item.product._id, 1)"></v-btn>
-                  {{ item.quantity }}
-                  <v-btn variant="text" icon="mdi-minus" @click="updateCart(item.product._id, -1)"></v-btn>
-                </td>
-                <td>{{ item.quantity * item.product.price }}</td>
-                <td>
-                  <v-btn variant="text" icon="mdi-delete" @click="updateCart(item.product._id, item.quantity * -1)">
-                  </v-btn>
-                </td>
-              </tr>
-              <tr v-if="cart.length === 0">
-                <td colspan="6" class="text-center">沒有商品</td>
-              </tr>
-            </tbody>
-          </v-table>
-        </v-col>
-        <v-col cols="12" class="text-center">
-          <p>總金額:{{ total }}</p>
-          <v-btn @click="submit" :disabled="!canCheckout" class="vbtn">結帳</v-btn>
-        </v-col>
-      </v-row>
-    </v-container>
-  </section>
+  <div id="CartView">
+
+    <section>
+      <v-container>
+        <v-row>
+          <v-col cols="12">
+            <h3 class="text-center">點餐清單</h3>
+          </v-col>
+          <v-col cols="12">
+            <v-table>
+              <thead>
+                <tr class="text-center tr">
+                  <th style="color: black;">圖片</th>
+                  <th style="color: black;">名稱</th>
+                  <th style="color: black;">單價</th>
+                  <th style="color: black;">數量</th>
+                  <th style="color: black;">小計</th>
+                  <th style="color: black;">操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="item in cart" :key="item._id" :class="{ 'dg-red-lightrn-4': !item.product.sell }">
+                  <td>
+                    <v-img :src="item.product.image" cover width="200" aspect-ratio="1" style="padding: 20px;"
+                      class="img"></v-img>
+                  </td>
+                  <td>{{ item.product.name }}</td>
+                  <td>{{ item.product.price }}</td>
+                  <td>
+                    <v-btn variant="text" icon="mdi-plus" @click="updateCart(item.product._id, 1)"></v-btn>
+                    {{ item.quantity }}
+                    <v-btn variant="text" icon="mdi-minus" @click="updateCart(item.product._id, -1)"></v-btn>
+                  </td>
+                  <td>{{ item.quantity * item.product.price }}</td>
+                  <td>
+                    <v-btn variant="text" icon="mdi-delete" @click="updateCart(item.product._id, item.quantity * -1)">
+                    </v-btn>
+                  </td>
+                </tr>
+                <tr v-if="cart.length === 0">
+                  <td colspan="6" class="text-center">沒有商品</td>
+                </tr>
+              </tbody>
+            </v-table>
+          </v-col>
+          <v-col cols="12" class="text-center">
+            <p>總金額:{{ total }}</p>
+            <v-btn @click="submit" :disabled="!canCheckout" class="vbtn">結帳</v-btn>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
+  </div>
 </template>
 
 <script setup>
