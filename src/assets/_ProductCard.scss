@@ -14,14 +14,17 @@
     width: 50%;
     padding-left: 5px;
   }
-
   .v-card-title{
     // color: #ffffff;
     color: #000000;
     padding: 0;
     line-height: 3rem;
+    font-size: 25px !important;
   }
   .v-card-text{
+    pre{
+    font-size: 18px;
+    }
     // color: #d4d4d4;
     color: #2da815;
     padding: 0;
