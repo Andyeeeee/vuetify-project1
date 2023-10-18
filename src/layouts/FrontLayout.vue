@@ -25,10 +25,13 @@
 		<v-app-bar id="FrontLayout">
 			<v-app-bar-title id="FrontLayout">
 				<div class="d-flex">
-					<!-- <v-img src="@/image/logo.jpg" max-width="70" cover aspect-ratio="1" @click="toHome()" /> -->
-					<v-img src="@/image/logo.jpg" max-width="70" cover aspect-ratio="1" @click="toHome()" />
+					<button>
+						<!-- <v-img src="@/image/logo.jpg" max-width="70" cover aspect-ratio="1" @click="toHome()" /> -->
+						<v-img src="@/image/logo2.jpg" height="60px" max-width="260" cover aspect-ratio="1" @click="toHome()" />
+					</button>
+
 					<span class="ms-5 icon-text">
-						MoonDay義式小廚房
+						<!-- MoonDay義式小廚房 -->
 					</span>
 				</div>
 			</v-app-bar-title>
