@@ -2,7 +2,7 @@
   <section id="LoginView">
     <!-- <h1 class="text-center">會員登入</h1> -->
     <v-container>
-      <v-img :width="180" aspect-ratio="16/9" cover src="@/image/icon.jpg" style="margin: auto;"></v-img>
+      <v-img :width="180" aspect-ratio="16/9" cover src="@/image/logo.jpg" style="margin: auto;"></v-img>
       <v-col cols="4" style="margin: auto;" class="text-center justify-center">
         <v-form :disabled="isSubmitting" @submit.prevent="submit">
           <v-text-field v-model="account.value.value" :error-messages="account.errorMessage.value" placeholder="帳號"
