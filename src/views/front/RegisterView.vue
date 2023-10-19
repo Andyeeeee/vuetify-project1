@@ -2,7 +2,7 @@
   <section style="background-color: #004886;height:100vh;">
     <!-- <h1 class="text-center">註冊會員</h1> -->
     <v-container>
-      <v-img :width="180" aspect-ratio="16/9" cover src="@/image/icon.jpg" style="margin: auto;"></v-img>
+      <v-img :width="180" aspect-ratio="16/9" cover src="@/image/logo.jpg" style="margin: auto;"></v-img>
       <v-col cols="4" style="margin: auto;">
         <v-form :disabled="isSubmitting" @submit.prevent="submit">
           <v-text-field v-model="account.value.value" :error-messages="account.errorMessage.value" placeholder="帳號"

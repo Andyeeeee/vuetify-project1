@@ -25,7 +25,7 @@
     <v-app-bar id="FrontLayout">
       <v-app-bar-title id="FrontLayout">
         <div class="d-flex">
-          <v-img src="@/image/logo.jpg" max-width="70" cover aspect-ratio="1" @click="toHome()" />
+          <v-img src="@/image/logo2.jpg" max-width="70" cover aspect-ratio="1" @click="toHome()" />
           <span class="ms-5" style="line-height: 70px; font-size: 32px">
             沐對
           </span>
